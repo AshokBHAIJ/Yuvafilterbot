@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID'))
-API_HASH = environ.get('API_HASH')
-BOT_TOKEN = environ.get('BOT_TOKEN')
+API_ID = int(environ.get('29475286'))
+API_HASH = environ.get('d6e24c26638bcecadda0ea6dd1894633')
+BOT_TOKEN = environ.get('7153182738:AAGcnoqZqv5rnVrn0lnvTdXAuc89-_QjR5Y')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -28,8 +28,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/61ef9818986cef95
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS',5238367049'').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '2067938289').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -43,8 +43,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "Nobita")
+DATABASE_URI = environ.get("mongodb+srv://ashokbhaijaancom:<t7A1UrH5wSjReBSI>@cluster0.vqv6idn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", "")
+DATABASE_NAME = environ.get("DATABASE_NAME", "Tamilrockers570")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # stickers
@@ -57,18 +57,18 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '8c09653e5c38f84d1b76ad3197c5a023e53b494d')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com/')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1d7ce4b99675ece8c654a6b95b3961987b64ab80')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://telegram.me/NobiDeveloperSupport')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://telegram.me/NobiDeveloper')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/kR_Rolex')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/kR_Rolex')
 MSG_ALRT = environ.get('MSG_ALRT', 'ꜱʜᴀʀᴇ  ᴀɴᴅ  ꜱᴜᴘᴘᴏʀᴛ  ᴜꜱ')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'NobiDeveloperSupport')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL''2041525094'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/kR_Rolex')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
